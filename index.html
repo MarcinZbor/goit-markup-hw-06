@@ -455,13 +455,52 @@
           </span>
         </button>
         <p class="modaltext">Zostaw swoje dane w formularzu poniżej</p>
-          <form class="my-form" name="modalform">
-           
-            <fieldset class="label1">
-              <label for="name" class="label">Name</label>
-              <input type="text" id="name" />
-            </fieldset>
-          </form>
+        <form class="my-form" name="modalform">
+          <fieldset class="fieldset">
+            <label for="name" class="label">Imię</label>
+            <svg class="modalsvg">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
+            <input class="input" type="text" id="name" />
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="phone" class="label">Telefon</label>
+            <svg class="modalsvg">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <input class="input" type="tel" id="phone" />
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="email" class="label">Email</label>
+            <svg class="modalsvg">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            <input class="input" type="tel" id="email" />
+          </fieldset>
+          <fieldset class="textareafieldset fieldset">
+            <label for="textarea" class="label">Komentarz</label>
+            <textarea
+              class="textarea-input"
+              id="textarea"
+              name="areainput"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </fieldset>
+          <label class="legal-checkbox">
+            <input type="checkbox" class="hide-checkbox" />
+            <span class="spancheck">
+              Oświadczam, iż akceptuję
+              <a href="" target="_blank" class="checkbox-link">Regulamin</a> i
+              <a href="" target="_blank" class="checkbox-link"
+                >Politykę prywatności</a
+              >
+            </span>
+            <svg class="svgcheckbox" width="16px" height="15px">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+          </label>
+          <button class="checkbutton" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./modal.js"></script>

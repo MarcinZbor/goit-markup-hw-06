@@ -587,13 +587,15 @@ footer {
   margin: auto;
   width: 528px;
   height: 581px;
-  radius: 4px;
+  border-radius: 4px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   pointer-events: painted;
   padding-top: 8px;
-  padding-left: 490px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 .is-hidden {
   transform: translatex(-100%);
@@ -606,6 +608,8 @@ footer {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
+  top: 8px;
+  right: 8px;
 }
 
 .icon-envelope {
@@ -672,12 +676,107 @@ footer {
 .form-footer-input:focus {
   border-color: var(--hover);
 }
-.modaltext{
+.modaltext {
   font-size: 20px;
   font-weight: 700;
   line-height: 23px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 0.75rem;
-  color: red;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  color: rgba(33, 33, 33, 1);
+}
+.modaltext {
+  margin-top: 40px;
+}
+.my-form .modalsvg {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+}
+
+.my-form .label {
+  position: absolute;
+  top: -18px;
+  font-size: 12px;
+  color: rgba(117, 117, 117, 1);
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.my-form .input {
+  border: 0;
+  font-size: 18px;
+  margin-left: 10px;
+  outline: 0;
+  width: 100%;
+}
+.fieldset {
+  width: 448px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  margin-left: 40px;
+  border: Solid rgba(33, 33, 33, 0.2);
+  top: 30px;
+  border-radius: 4px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.fieldset:has(input:focus) {
+  border-color: var(--hover);
+}
+.fieldset:has(input:focus) .modalsvg {
+  fill: var(--hover);
+}
+.textareafieldset {
+  outline: 0;
+  width: 448px;
+  height: 120px;
+  border-radius: 4px;
+  margin-top: 28px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  border: Solid rgba(33, 33, 33, 0.2);
+}
+
+.textareafieldset:has(textarea:focus) {
+  border-color: var(--hover);
+}
+
+textarea {
+  resize: none;
+  outline: 0;
+  border: 0;
+  padding-top: 12px;
+  padding-left: 16px;
+  width: 416px;
+  height: 96px;
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+}
+.legal-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 49px;
+  margin-top: 49px;
+}
+.spancheck {
+  margin: 0 0 0 24px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(117, 117, 117, 1);
+}
+.checkbutton {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(33, 150, 243, 1);
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  padding: 10px 28px 10px 42px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 164px;
 }
