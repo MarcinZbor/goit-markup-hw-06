@@ -690,11 +690,7 @@ footer {
 .modaltext {
   margin-top: 40px;
 }
-.my-form .modalsvg {
-  width: 18px;
-  height: 18px;
-  margin-left: 10px;
-}
+
 
 /* .my-form .label {
   position: absolute;
@@ -751,6 +747,10 @@ footer {
 .modalsvg{
   pointer-events: none;
   position: absolute;
+  top: 21%;
+  left: 10%;
+  width:18px;
+  height: 18px;
 }
 
 .input{
@@ -758,15 +758,14 @@ footer {
   width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  margin-top: 30px;
+  margin-left: 40px;
   /* opacity: 0; */
 }
 .name{
   position: absolute;
-  top: 50%;
-  
-
-}
-
+  left: 9%;
+  margin-bottom: 4px;
 }
 
 /* textarea {
