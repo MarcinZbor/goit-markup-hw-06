@@ -230,6 +230,7 @@ button.button-home {
 }
 footer {
   background-color: #2f303a;
+  padding-bottom: 60px;
 }
 
 /* zadanie domowe 3 */
@@ -695,7 +696,7 @@ footer {
   margin-left: 10px;
 }
 
-.my-form .label {
+/* .my-form .label {
   position: absolute;
   top: -18px;
   font-size: 12px;
@@ -711,24 +712,24 @@ footer {
   width: 100%;
 }
 .fieldset {
-  width: 448px;
-  height: 40px;
+  
   display: flex;
   position: relative;
   margin-left: 40px;
-  border: Solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   top: 30px;
   border-radius: 4px;
   align-items: center;
   margin-bottom: 28px;
-}
-.fieldset:has(input:focus) {
+} */
+
+/* .fieldset:has(input:focus) {
   border-color: var(--hover);
 }
 .fieldset:has(input:focus) .modalsvg {
-  fill: var(--hover);
+  fill: var(--hover); */
 }
-.textareafieldset {
+/* .textareafieldset {
   outline: 0;
   width: 448px;
   height: 120px;
@@ -741,9 +742,34 @@ footer {
 
 .textareafieldset:has(textarea:focus) {
   border-color: var(--hover);
+} */
+.input-box{
+  display: block;
+  position: relative;
+
+}
+.modalsvg{
+  pointer-events: none;
+  position: absolute;
 }
 
-textarea {
+.input{
+  height: 40px;
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  /* opacity: 0; */
+}
+.name{
+  position: absolute;
+  top: 50%;
+  
+
+}
+
+}
+
+/* textarea {
   resize: none;
   outline: 0;
   border: 0;
@@ -753,7 +779,7 @@ textarea {
   height: 96px;
   font-size: 12px;
   color: rgba(117, 117, 117, 0.5);
-}
+} */
 .legal-checkbox {
   display: flex;
   flex-wrap: wrap;
@@ -782,18 +808,18 @@ textarea {
   margin-left: 164px;
 }
 
-.checkboxspan{
-display: flex;
-width: 16px;
-height: 15px;
-align-items: center;
-justify-content: center;
-border: 2px solid #212121;
+.checkboxspan {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #212121;
 }
-.hide-checkbox{
+.hide-checkbox {
   opacity: 0;
 }
-.hide-checkbox:checked + .checkboxspan{
+.hide-checkbox:checked + .checkboxspan {
   background-color: rgba(33, 150, 243, 1);
   border: none;
-} 
+}
